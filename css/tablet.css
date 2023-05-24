@@ -1,0 +1,58 @@
+@media (max-width: 992px) {
+  #job-info {
+    display: flex;
+    align-items: center;
+  }
+
+  #job-info .container-job {
+    display: flex;
+    align-items: center;
+    column-count: 2;
+    display: inline-block;
+    margin-inline: 0%;
+  }
+
+  .job-card {
+    break-inside: avoid; /* Ngăn không cho mục bị chia ngang khi xuống dòng */
+    page-break-inside: avoid; /* Ngăn không cho mục bị chia ngang khi in */
+    overflow-wrap: break-word;
+    margin-bottom: 20px;
+  }
+  .certificate-card {
+    display: inline-block;
+    text-align: center;
+  }
+  .certificate-card img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .certification-description {
+    margin: auto;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .timeline {
+    grid-area: auto;
+  }
+  .list-project {
+    font-size: smaller;
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .list-project {
+    font-size: smaller;
+    gap: 5px;
+  }
+
+  #job-info .container-job {
+    width: 100%;
+  }
+  .list-project {
+    grid-template-columns: 1fr;
+  }
+  #nav-bar a {
+    font-size: smaller;
+  }
+}
